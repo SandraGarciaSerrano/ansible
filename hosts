@@ -1,0 +1,72 @@
+# This is the default ansible 'hosts' file.
+#
+# It should live in /etc/ansible/hosts
+#
+#   - Comments begin with the '#' character
+#   - Blank lines are ignored
+#   - Groups of hosts are delimited by [header] elements
+#   - You can enter hostnames or ip addresses
+#   - A hostname/ip can be a member of multiple groups
+
+# Ex 1: Ungrouped hosts, specify before any group headers.
+
+## green.example.com
+## blue.example.com
+## 192.168.100.1
+## 192.168.100.10
+
+# Ex 2: A collection of hosts belonging to the 'webservers' group
+
+## [webservers]
+## alpha.example.org
+## beta.example.org
+## 192.168.1.100
+## 192.168.1.110
+
+# If you have multiple hosts following a pattern you can specify
+# them like this:
+
+## www[001:006].example.com
+
+# Ex 3: A collection of database servers in the 'dbservers' group
+
+## [dbservers]
+## 
+## db01.intranet.mydomain.net
+## db02.intranet.mydomain.net
+## 10.25.1.56
+## 10.25.1.57
+
+# Here's another example of host ranges, this time there are no
+# leading 0s:
+
+## Clients Scenary
+localhost ansible_host=127.0.0.1
+vnxlab ansible_host=127.0.1.1
+c1 ansible_host=10.250.0.2
+c2 ansible_host=10.250.0.6
+dns ansible_host=10.250.0.10
+r ansible_host=10.250.0.14
+
+# CPD1
+fw1 ansible_host=10.250.0.22
+lb1 ansible_host=10.250.0.26
+s1-1 ansible_host=10.250.0.30
+s2-1 ansible_host=10.250.0.34
+s3-1 ansible_host=10.250.0.38
+bbdd1 ansible_host=10.250.0.42
+nas1-1 ansible_host=10.250.0.46
+nas2-1 ansible_host=10.250.0.50
+nas3-1 ansible_host=10.250.0.54
+
+#CDP2
+fw2 ansible_host=10.250.0.102
+lb2 ansible_host=10.250.0.106
+s1-2 ansible_host=10.250.0.110
+s2-2 ansible_host=10.250.0.114
+s3-2 ansible_host=10.250.0.118
+bbdd2 ansible_host=10.250.0.122
+nas1-2 ansible_host=10.250.0.126
+nas2-2 ansible_host=10.250.0.130
+nas3-2 ansible_host=10.250.0.134
+

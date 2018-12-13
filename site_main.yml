@@ -1,0 +1,20 @@
+---
+
+- hosts: all
+
+  roles:
+      - { role: start_scenary, tags: ['config_sce'] }
+      - { role: bbdd_conf, tags: ['config_bbdd'] }
+      - { role: gluster_conf, tags: ['config_glust'] }
+      - { role: crm_conf, tags: ['config_crm'] }
+      - { role: crm_conf_s2s3, tags: ['config_crm_s2s3'] }
+      - { role: lb_conf, tags: ['config_lb'] }
+      - { role: fw_conf, tags: ['config_fw'] }
+      - { role: dns_conf, tags: ['config_dns'] }
+      - { role: clients_conf, tags: ['config_client'] }
+      - { role: bbdd_conf_CPD2, tags: ['config_bbdd_CPD2'] }
+      - { role: gluster_conf_CPD2, tags: ['config_glust_CPD2'] }
+      - { role: crm_conf_CPD2, tags: ['config_crm_CPD2'] }
+      - { role: crm_conf_s2s3_CPD2, tags: ['config_crm_s2s3_CPD2'] }
+      - { role: lb_conf_CPD2, tags: ['config_lb_CPD2'] }
+      - { role: fw_conf_CPD2, tags: ['config_fw_CPD_CPD2'] }
